@@ -50,8 +50,7 @@ jobs:
     name: Docker Build, Tag, Push
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v1
+    - uses: actions/checkout@v1
     - name: Download built artifact
       uses: actions/download-artifact@main
       with:
